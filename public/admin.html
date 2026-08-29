@@ -1,0 +1,22 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin — Sweet Story</title><link rel="stylesheet" href="/css/style.css"></head><body>
+<header class="site-header"><div class="wrap nav"><a class="brand" href="/">Sweet <span>Story</span></a><nav class="main-nav"><a href="/">Website</a><a href="/admin.html">Admin</a></nav><button class="btn secondary" id="logout">Uitloggen</button></div></header>
+<main class="wrap admin-shell">
+<div class="kicker">Beheer</div><h1 style="font-size:46px">Creaties beheren</h1>
+<div class="admin-grid">
+<form class="panel" id="workForm" enctype="multipart/form-data">
+<input type="hidden" id="editId">
+<div class="form-section"><h2 id="formTitle">Nieuwe creatie</h2>
+<div class="form-grid">
+<div class="field"><label>Titel</label><input id="title" required placeholder="Bijv. Unicorn verjaardagstaart"></div>
+<div class="field"><label>Categorie</label><select id="category"><option>Kindertaarten</option><option>Verjaardagstaarten</option><option>Bruidstaarten</option><option>Baby & communie</option><option>Thema taarten</option><option>Desserts</option><option>Sweets</option></select></div>
+<div class="field full"><label>Beschrijving</label><textarea id="description" placeholder="Korte beschrijving van de creatie..."></textarea></div>
+<div class="field full"><label>Foto</label><input id="photo" type="file" accept="image/*"><img id="preview" class="preview" alt="Preview"></div>
+</div></div>
+<div class="actions"><button class="btn primary" type="submit" id="saveBtn">Creatie opslaan</button><button class="btn secondary" type="button" id="cancelEdit" style="display:none">Annuleren</button></div>
+<div class="status" id="status" style="margin-top:14px">Voeg een nieuwe creatie toe.</div>
+</form>
+
+<aside class="panel"><h2>Bestaande creaties</h2><div class="admin-list" id="adminList"></div></aside>
+</div>
+</main>
+<script src="/js/admin.js"></script></body></html>

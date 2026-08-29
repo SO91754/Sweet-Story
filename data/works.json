@@ -1,0 +1,258 @@
+[
+  {
+    "id": "work-1",
+    "title": "Nike sneaker taart",
+    "category": "Kindertaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-01.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-2",
+    "title": "Minecraft verjaardagstaart",
+    "category": "Kindertaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-02.jpg",
+    "featured": true
+  },
+  {
+    "id": "work-3",
+    "title": "Space cake",
+    "category": "Kindertaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-03.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-4",
+    "title": "Vintage verjaardagstaart",
+    "category": "Verjaardagstaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-04.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-5",
+    "title": "Chocolade dessert met rood fruit",
+    "category": "Desserts",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-05.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-6",
+    "title": "Unicorn cake",
+    "category": "Kindertaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-06.jpg",
+    "featured": true
+  },
+  {
+    "id": "work-7",
+    "title": "Bacardi thema taart",
+    "category": "Thema taarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-07.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-8",
+    "title": "Elegante cake pops",
+    "category": "Sweets",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-08.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-9",
+    "title": "Voetbaltaart",
+    "category": "Kindertaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-09.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-10",
+    "title": "Cadeau taart",
+    "category": "Thema taarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-10.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-11",
+    "title": "Vintage striktaart",
+    "category": "Verjaardagstaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-11.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-12",
+    "title": "Rainbow verjaardagstaart",
+    "category": "Kindertaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-12.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-13",
+    "title": "Witte striktaart",
+    "category": "Verjaardagstaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-13.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-14",
+    "title": "Jubileumtaart",
+    "category": "Verjaardagstaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-14.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-15",
+    "title": "Gingerbread character",
+    "category": "Sweets",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-15.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-16",
+    "title": "Cars verjaardagstaart",
+    "category": "Kindertaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-16.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-17",
+    "title": "Fruit drip cake",
+    "category": "Verjaardagstaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-17.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-18",
+    "title": "Bruiloftstaart met rode rozen",
+    "category": "Bruidstaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-18.jpg",
+    "featured": true
+  },
+  {
+    "id": "work-19",
+    "title": "K-pop verjaardagstaart",
+    "category": "Kindertaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-19.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-20",
+    "title": "Baby cake",
+    "category": "Baby & communie",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-20.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-21",
+    "title": "Frambozen feesttaart",
+    "category": "Verjaardagstaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-21.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-22",
+    "title": "Witte bruidstaart",
+    "category": "Bruidstaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-22.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-23",
+    "title": "Prinsessen taart",
+    "category": "Kindertaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-23.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-24",
+    "title": "Chocolate bear cake",
+    "category": "Baby & communie",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-24.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-25",
+    "title": "Carrousel verjaardagstaart",
+    "category": "Kindertaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-25.jpg",
+    "featured": true
+  },
+  {
+    "id": "work-26",
+    "title": "Beauty thema taart",
+    "category": "Thema taarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-26.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-27",
+    "title": "Bruiloftstaart",
+    "category": "Bruidstaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-27.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-28",
+    "title": "Voetbalshirt taart",
+    "category": "Thema taarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-28.jpg",
+    "featured": true
+  },
+  {
+    "id": "work-29",
+    "title": "Piraten verjaardagstaart",
+    "category": "Kindertaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-29.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-30",
+    "title": "Elegante jubileumtaart",
+    "category": "Verjaardagstaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-30.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-31",
+    "title": "Game verjaardagstaart",
+    "category": "Kindertaarten",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-31.jpg",
+    "featured": false
+  },
+  {
+    "id": "work-32",
+    "title": "Communietaart",
+    "category": "Baby & communie",
+    "description": "Handgemaakt en volledig afgestemd op het thema, de kleuren en de gelegenheid.",
+    "image": "/images/works/work-32.jpg",
+    "featured": true
+  }
+]

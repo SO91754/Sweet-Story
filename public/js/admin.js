@@ -1,0 +1,16 @@
+let works=[];
+const list=document.getElementById("adminList"),form=document.getElementById("workForm"),status=document.getElementById("status"),editId=document.getElementById("editId"),preview=document.getElementById("preview"),photo=document.getElementById("photo");
+async function api(url,opts={}){const r=await fetch(url,opts);if(r.status===401){location.href="/login.html";throw new Error("Niet ingelogd")}const out=await r.json();if(!r.ok)throw new Error(out.error||"Fout");return out}
+async function load(){works=await api("/api/admin/works");render()}
+function render(){list.innerHTML=works.map(x=>`<div class="admin-item"><img src="${x.image}" alt="${x.title}"><div><b>${x.title}</b><br><small>${x.category}</small></div><div class="mini-actions"><button class="mini-btn edit" data-edit="${x.id}">Bewerken</button><button class="mini-btn delete" data-del="${x.id}">Verwijderen</button></div></div>`).join("");
+ list.querySelectorAll("[data-edit]").forEach(b=>b.addEventListener("click",()=>startEdit(b.dataset.edit)));
+ list.querySelectorAll("[data-del]").forEach(b=>b.addEventListener("click",()=>remove(b.dataset.del)));
+}
+function reset(){form.reset();editId.value="";document.getElementById("formTitle").textContent="Nieuwe creatie";document.getElementById("saveBtn").textContent="Creatie opslaan";document.getElementById("cancelEdit").style.display="none";preview.style.display="none";status.textContent="Voeg een nieuwe creatie toe."}
+function startEdit(id){const x=works.find(w=>w.id===id);if(!x)return;editId.value=id;document.getElementById("title").value=x.title;document.getElementById("category").value=x.category;document.getElementById("description").value=x.description||"";preview.src=x.image;preview.style.display="block";document.getElementById("formTitle").textContent="Creatie bewerken";document.getElementById("saveBtn").textContent="Wijzigingen opslaan";document.getElementById("cancelEdit").style.display="inline-flex";window.scrollTo({top:0,behavior:"smooth"})}
+async function remove(id){const x=works.find(w=>w.id===id);if(!confirm(`"${x?.title||"Deze creatie"}" verwijderen?`))return;await api("/api/admin/works/"+encodeURIComponent(id),{method:"DELETE"});await load()}
+photo.addEventListener("change",()=>{if(!photo.files[0])return;preview.src=URL.createObjectURL(photo.files[0]);preview.style.display="block"});
+document.getElementById("cancelEdit").addEventListener("click",reset);
+document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/logout",{method:"POST"});location.href="/login.html"});
+form.addEventListener("submit",async e=>{e.preventDefault();status.textContent="Opslaan...";const data={title:document.getElementById("title").value.trim(),category:document.getElementById("category").value,description:document.getElementById("description").value.trim()};const fd=new FormData();fd.append("work",JSON.stringify(data));if(photo.files[0])fd.append("photo",photo.files[0]);try{const id=editId.value;await api(id?"/api/admin/works/"+encodeURIComponent(id):"/api/admin/works",{method:id?"PUT":"POST",body:fd});status.textContent="Opgeslagen.";reset();await load()}catch(err){status.textContent=err.message}});
+load().catch(()=>{});

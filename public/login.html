@@ -1,0 +1,6 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin login — Sweet Story</title><link rel="stylesheet" href="/css/style.css"></head><body>
+<div class="login-card"><div class="kicker">Sweet Story Admin</div><h1>Inloggen</h1><p>Alleen voor beheer van de website.</p>
+<form id="loginForm"><div class="field"><label>Wachtwoord</label><input type="password" id="password" required autocomplete="current-password"></div><div class="actions"><button class="btn primary" type="submit">Inloggen</button><a class="btn secondary" href="/">Terug naar website</a></div><div class="status" id="status" style="margin-top:14px">Voer het adminwachtwoord in.</div></form></div>
+<script>
+document.getElementById("loginForm").addEventListener("submit",async e=>{e.preventDefault();const r=await fetch("/api/login",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({password:document.getElementById("password").value})});const out=await r.json();if(r.ok)location.href="/admin.html";else document.getElementById("status").textContent=out.error||"Onjuist wachtwoord.";});
+</script></body></html>
