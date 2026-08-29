@@ -1,0 +1,10 @@
+node_modules/
+.env
+.DS_Store
+
+data/works.json
+data/availability.json
+data/orders.json
+data/order_uploads/
+
+public/images/uploads/
