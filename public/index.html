@@ -58,15 +58,25 @@
 <section id="contact">
 <div class="order">
 <div><div class="kicker">Bestelling aanvragen</div><h2>Vertel ons jouw Sweet Story.</h2><p>Geef zo veel mogelijk informatie door. Zo kunnen we sneller bekijken wat mogelijk is en een passende prijs voorstellen.</p>
-<p><strong>Instagram:</strong> @sweet_story_lanaken<br><strong>Locatie:</strong> Lanaken, België</p></div>
-<form id="orderForm" class="form-grid">
-<div class="field"><label>Naam</label><input name="name" required></div>
-<div class="field"><label>E-mail</label><input name="email" type="email" required></div>
-<div class="field"><label>Datum</label><input name="date" type="date"></div>
-<div class="field"><label>Aantal personen</label><input name="people" placeholder="Bijv. 15"></div>
-<div class="field full"><label>Gelegenheid / thema</label><input name="theme" placeholder="Verjaardag, communie, bruiloft..."></div>
-<div class="field full"><label>Vertel je idee</label><textarea name="message" required placeholder="Kleuren, smaak, thema, inspiratie..."></textarea></div>
-<div class="field full"><button class="btn primary" type="submit">Aanvraag voorbereiden</button></div>
+<p><strong>Instagram:</strong> @sweet_story_lanaken<br><strong>Locatie:</strong> Lanaken, België</p>
+<p><strong>Let op:</strong> een aanvraag is nog geen definitieve bestelling. Sweet Story bevestigt eerst de datum en details.</p></div>
+<form id="orderForm" class="form-grid" enctype="multipart/form-data">
+<div class="field"><label>Naam *</label><input name="name" required></div>
+<div class="field"><label>E-mail *</label><input name="email" type="email" required></div>
+<div class="field"><label>Telefoon</label><input name="phone" type="tel" placeholder="+32 ..."></div>
+<div class="field"><label>Datum *</label><input name="date" type="date" required></div>
+<div class="field"><label>Type bestelling *</label><select name="orderType" required><option value="">Kies...</option><option>Taart</option><option>Kindertaart</option><option>Bruidstaart</option><option>Communie / doop</option><option>Cupcakes</option><option>Sweets</option><option>Andere</option></select></div>
+<div class="field"><label>Aantal personen *</label><input name="people" required placeholder="Bijv. 15"></div>
+<div class="field"><label>Smaak</label><input name="flavour" placeholder="Bijv. vanille, chocolade"></div>
+<div class="field"><label>Vulling</label><input name="filling" placeholder="Bijv. frambozencrème"></div>
+<div class="field full"><label>Gelegenheid / thema *</label><input name="theme" required placeholder="Verjaardag, communie, bruiloft, thema..."></div>
+<div class="field"><label>Kleuren</label><input name="colors" placeholder="Bijv. lila, wit, goud"></div>
+<div class="field"><label>Tekst op de taart</label><input name="cakeText" placeholder="Naam, leeftijd of korte tekst"></div>
+<div class="field full"><label>Allergieën / intoleranties</label><input name="allergies" placeholder="Laat leeg als er geen zijn"></div>
+<div class="field full"><label>Referentiefoto</label><input name="reference" type="file" accept="image/*"></div>
+<div class="field full"><label>Vertel je idee *</label><textarea name="message" required placeholder="Kleuren, stijl, decoratie, inspiratie en andere details..."></textarea></div>
+<div class="field full"><button class="btn primary" id="orderSubmit" type="submit">Aanvraag versturen</button></div>
+<div class="field full"><div class="status" id="orderStatus" style="display:none"></div></div>
 </form>
 </div>
 </section>
