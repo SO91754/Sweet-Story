@@ -110,6 +110,23 @@ app.post("/api/admin/orders/:id/status",auth,(req,res)=>{
  writeOrders(orders);
  res.json({ok:true,order:orders[i]});
 });
+app.delete("/api/admin/orders/:id",auth,(req,res)=>{
+ try{
+  const orders=readOrders();
+  const i=orders.findIndex(o=>o.id===req.params.id);
+  if(i<0) return res.status(404).json({error:"Aanvraag niet gevonden."});
+  const [order]=orders.splice(i,1);
+  if(order.referenceFile){
+   const file=path.join(ORDER_UPLOADS,path.basename(order.referenceFile));
+   if(fs.existsSync(file)) try{fs.unlinkSync(file)}catch{}
+  }
+  writeOrders(orders);
+  res.json({ok:true});
+ }catch(e){
+  console.error(e);
+  res.status(500).json({error:"Aanvraag kon niet worden verwijderd."});
+ }
+});
 
 app.post("/api/admin/works",auth,upload.single("photo"),(req,res)=>{
  try{
